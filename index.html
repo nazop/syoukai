@@ -1,0 +1,171 @@
+<!DOCTYPE html> 
+<html lang="ja"> 
+    <head> 
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" type="text/css" href="hmp.css">
+        <script src="hmp.js"></script>
+         
+        <title>ホームページ</title>
+
+	</head>        
+	<body>
+	
+	<div id="all">
+	
+		<div id="head">
+		
+		
+		
+		<ul id="menu">
+		
+			<a href="#syokai" class="menubutton">
+				<li class="menuli">自己紹介
+				</li>
+			</a>
+			<a href="#product" class="menubutton">
+				<li class="menuli">制作物1
+				<br>(Unity)
+				</li>
+			</a>
+			<a href="#product2" class="menubutton">
+				<li class="menuli">制作物2
+				<br>
+				(CSS+JS)
+				</li>
+			</a>
+			
+			<a href="#product3" class="menubutton">
+				<li class="menuli">制作物3
+				<br>
+				(Unity)
+				</li>
+			</a>
+		
+		</ui>
+		
+		</div>
+		
+		<div id="nakami">	    	   
+        
+     	   <div id="umi">
+     	
+     			<div id="title">
+     			
+     				プログラミングの成果物公開サイト
+     			
+     			</div>
+     	
+     		</div> 
+     	<a name="syokai"></a>
+     		<div id="syoukai">
+				
+     			<h1 id="zikotitle">自己紹介</h1>
+
+     			<div id="syoukaiblock">
+     			
+     				<div id="icon">
+     					<img src="icon.png">
+     				</div>
+     				
+     				<div id="desc">
+     					ゲームが作りたくて高校生の頃からプログラミングを始めました。
+     					Unityでゲームを作ったり、CSSとHTMLとJSでサイトを作ったりしています。
+     					「どうしてそういう動きをするのか？」を理解してコードを書くよう心掛けています。
+     					創作活動が趣味で、ゲームと小説と絵を主に生産中。無いなら作るがモットー。
+     				</div>
+     			</div>
+     			     			     	
+     		</div>
+     		
+     		<a name="product"></a>
+     		<br>
+     		<div id="prod">
+     		
+     			<h1 id="prodtitle">制作物</h1><br>
+     			
+     			<div class="prodblock">
+     			
+     				<h2 class="proti">ゲームのような物</h2>
+     				<br>
+     				<div class="prodimg">
+     					<img src="game1.png" width="50%">
+     				</div>
+     				<div class="proddesc">
+     					同じ値を2つ押すと値が大きくなり得点が入る謎のゲーム。
+     					<br>
+     					画面サイズによってキャンバスの位置がずれる現象を修正するのに苦労しました。
+     					<br>
+     					アンカーを位置の基準にするなんて聞いてない。直前にWordを弄っていたのでピンと来た。
+     					<br>
+     					<a href="https://plicy.net/GamePlay/83270">公開サイト(Pricy)</a>
+     					<br>
+     					<a href="https://github.com/nazop/nazogame">ソース(GitHub)</a>
+     					<br>
+     				</div>
+     			
+     			</div>
+     			<a name="product2"></a>
+     			<div class="prodblock">
+     			
+     				<h2 class="proti">HTML+CSS+JSで制作した物</h2>
+     				<br>
+     				<div class="prodimg">
+     					<img src="prod2.png" width="70%">
+     				</div>
+     				<div class="proddesc">
+     					夜空と海の背景に雪が降って波紋が広がっている風景のような物をHTML+CSS+JSで作った代物。
+     					<br>
+     					恐らくこのサイトの方が難しいコードを書いている。サイト上部のアニメーションはこれの波紋を流用。
+     					<br>
+     					<a href="https://codepen.io/ragna/pens/public">公開サイト(CodePen)</a>
+     					<br>
+     				</div>
+     			
+     			</div>
+     			
+     			<a name="product3"></a>
+     			<div class="prodblock">
+     			
+     				<h2 class="proti">Unityで作成したゲームの動画</h2>
+     				<br>
+     				<div class="prodimg">
+     					<img src="tum.png" width="40%">
+     					<img src="coin.png" width="40%">
+     				</div>
+     				<div class="proddesc">
+     					ツムツムっぽいゲームとコイン落としのようなゲームの動画。
+     					<br>
+     					実機では動くが機種に依存するのと、コードが古過ぎてUnityのバージョンを上げると動かなくなると言う欠陥持ち。
+     					<br>
+     					Unityちゃんの日本語の資料がまともに無い時に英語のリファレンスと殴り合って作りました。
+     					<br>
+     					コードはどれがオリジナルか分からないので動画だけ公開しています。
+     					<br>
+     					<a href="https://photos.app.goo.gl/Xknnsx2Zpb8Q1Uiv6">公開サイト(Googleフォト)</a>
+     					<br>
+     				</div>
+     			
+     			</div>
+     			
+     		</div> 
+     	
+     	 </div>
+        
+     </div>
+     
+     <br><br>
+        
+    </body>
+    
+      <script>
+ 
+	  	window.addEventListener('DOMContentLoaded', function() {
+  		
+  		wave();		
+  		
+	})
+  
+  </script>
+    
+</html>
