@@ -1,20 +1,25 @@
 body {
+
 	margin: 0px;
+
 }
 
 a{
+
   text-decoration: none;
   color: blue;
+
 }
 a:hover{
+
   text-decoration: none;
    color: blue;
+
 }
 
 #all {
 
-	position: relative;
-	
+	position: relative;	
 	min-height: 100vh;
 	width: 100vw;
 	margin: 0px;
@@ -30,8 +35,7 @@ a:hover{
 	position: relative;
 	top:0vh;
 	margin: 0px;
-	
-	background: -webkit-linear-gradient(top, #ffffff 0%, #00bfff 100%);
+	background: -webkit-linear-gradient(top, #ffffff 0%, #00bfff 100%);	
     background: linear-gradient(top, #ffffff 0%, #00bfff 100%);
 
 }
@@ -40,65 +44,66 @@ a:hover{
 
 	width: 0%;
 	height: 0%;
-	border-radius: 50%;
-	
-	position: absolute; /* position:relativeの親要素からの位置を参照するよ */
-	
+	border-radius: 50%;	
+	position: absolute; /* position:relativeの親要素からの位置を参照するよ */	
 	border: double 3px white;
-	
-	opacity: 0;
-	
+	opacity: 0;	
 	animation: wave 5s infinite;
 	
 }
 
 @keyframes wave {
+
   0% {
+
     width:  0%;
     height: 0%;
     box-shadow: 0 0 100px inset skyblue;
 	opacity: 0;
+
   }
   
   50% {
 
   	opacity: 1;
+
   }
   
   100% {
+
     width:  10%;
     height: 7%;
     opacity: 0;
+
   }
+
 }
 
 .wav2 {
 
 	top:20%;
 	left:20%;
-
 	width: 10%;
 	height: 10%;
 	border-radius: 50%;
-	position: absolute;
-	
+	position: absolute;	
 	border: double 1px white;
-
-
   	animation: wave2 5s infinite;
-	
+  		
 }
 
 @keyframes wave2 {
+
   0% {
+
     width:  0%;
     height: 0%;
     opacity: 0;
 
-
   }
   
   50% {
+
     width:  60%;
     height: 50%;
     opacity: 0.7;
@@ -106,10 +111,13 @@ a:hover{
   }
   
   100% {
+
     width:  60%;
     height: 50%;
     opacity: 0;
+
   }
+
 }
 
 #head {
@@ -135,24 +143,22 @@ a:hover{
 	list-style-type: none; /* リストの最初に出てくるマークを消すよ */
 	background-image: linear-gradient(skyblue, #00bfff);
 	margin: 0px;
-	padding:0px;
-	
+	padding:0px;	
 	align-items: center; /* display:flexの時中身を真ん中に寄せるよ、縦方向だよ */
 	justify-content: center; /* display:flexの時中身を真ん中に寄せるよ、横方向だよ */
 
 }
 
 .menubutton {
+
 	position:relative;
 	width:20%;
 	height: 80%;
 	background-image: linear-gradient(skyblue, #00bfff); /* 背景色を線形グラデーションで塗るよ、グラデーションは画像扱いなんだ */
-
 	display: flex;
 	align-items: center; /* display:flexの時中身を真ん中に寄せるよ、縦方向だよ */
 	justify-content: center; /* display:flexの時中身を真ん中に寄せるよ、横方向だよ */
-	flex-wrap:wrap; /* flexのアイテムを折り返す */
-	
+	flex-wrap:wrap; /* flexのアイテムを折り返す */	
 	border-radius: 25px; /* ボーダーをこのぐらい丸くするね */
 	margin: 1%;
 	border: solid 3px #5e7fca; /* ボーダーの下側だよ */
@@ -160,20 +166,21 @@ a:hover{
 	color:white; /* 文字の色だよ */
 	font-weight: bold; /* 文字を太くするよ */
 	font-size: 1.6rem; /* html要素で決めたフォントサイズの1.6倍にするよ */
-	
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
-	
-	word-break: break-all;
-	
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);	
+	word-break: break-all;	
 
 }
 
 .menubutton:active {
+
 	background-image: linear-gradient(skyblue, #007fca);
+
 }
 
 .menubutton:hover {
+
 	color:white;
+
 }
 
 .menuli {
@@ -189,6 +196,7 @@ a:hover{
 }
 
 #title {
+
 	position:absolute;
 	font-weight: bold; /* 文字を太くするよ */
 	font-size: 1.6rem; /* html要素部分で決められたフォントサイズの1.6倍にするよ */
@@ -199,6 +207,7 @@ a:hover{
 	justify-content: center;
 	z-index:5; /* 波紋より上に置きたかったので */
 	color:#000080; /* 文字の色だよ */
+
 }
 
 #syoukai {
@@ -214,6 +223,7 @@ a:hover{
 }
 
 #zikotitle {
+
 	width:100%;
 	height: 10%;
 	top:10%;
@@ -224,25 +234,29 @@ a:hover{
 }
 
 #syoukaiblock {
+
 	width:100%;
 	height: 90%;
 	position:relative;	
 	display: flex;
-
 	justify-content: center;
 	flex-direction: row; /* flexの時子要素をを横並びにするよ */
+
 }
 
 #icon {
+
 	position:relative;
 	left:0px;	
 
 }
 
 #desc {
+
 	position:relative;
 	width:40%;
 	font-size: 1.4rem; /* html要素で決めたフォントサイズの1.6倍にするよ、フォントサイズ決めてないけど */
+
 }
 
 #prod {
@@ -258,6 +272,7 @@ a:hover{
 }
 
 #prodtitle {
+
 	width:100%;
 	height: 10%;
 	top:10%;
@@ -268,12 +283,14 @@ a:hover{
 }
 
 .prodblock {
+
 	width:100%;
 	min-height:30vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap:wrap;
+	padding-bottom: 5%;
 
 }
 
@@ -287,14 +304,23 @@ a:hover{
 }
 
 .prodimg {
+
 	width:40%;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
 
+
 .proddesc {
+
 	width:40%;
 	font-size: 1.4rem; /* html要素で決めたフォントサイズの1.6倍にするよ、フォントサイズ決めてないけど */
+
+}
+
+.backGlay {
+
+	background-color: #CCCCCC;
 
 }
