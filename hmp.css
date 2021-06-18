@@ -1,6 +1,7 @@
-body {
+html body {
 
 	margin: 0px;
+	width: 100%;
 
 }
 
@@ -10,6 +11,7 @@ a{
   color: blue;
 
 }
+
 a:hover{
 
   text-decoration: none;
@@ -21,7 +23,6 @@ a:hover{
 
 	position: relative;	
 	min-height: 100vh;
-	width: 100vw;
 	margin: 0px;
 	top:0px;
 	left:0px;
@@ -45,7 +46,7 @@ a:hover{
 	width: 0%;
 	height: 0%;
 	border-radius: 50%;	
-	position: absolute; /* position:relative‚Ìe—v‘f‚©‚ç‚ÌˆÊ’u‚ğQÆ‚·‚é‚æ */	
+	position: absolute; /* position:relativeã®è¦ªè¦ç´ ã‹ã‚‰ã®ä½ç½®ã‚’å‚ç…§ã™ã‚‹ã‚ˆ */	
 	border: double 3px white;
 	opacity: 0;	
 	animation: wave 5s infinite;
@@ -122,50 +123,50 @@ a:hover{
 
 #head {
 
-	position: fixed; /* êŠ‚ğŒÅ’è‚·‚é‚æA‘¼‚Ì—v‘f‚©‚çêŠ‚ğQÆ‚³‚ê‚È‚¢‚©‚ç‚¿‚å‚Á‚Æ¢‚é‚æ */
-	top: 0vh; /* vh‚Í‰æ–Ê‚Ìc‚Ì’·‚³‚ğ•\‚·‚æA100vh‚Å‰æ–Ê‚¢‚Á‚Ï‚¢‚¾‚æ */
+	position: fixed; /* å ´æ‰€ã‚’å›ºå®šã™ã‚‹ã‚ˆã€ä»–ã®è¦ç´ ã‹ã‚‰å ´æ‰€ã‚’å‚ç…§ã•ã‚Œãªã„ã‹ã‚‰ã¡ã‚‡ã£ã¨å›°ã‚‹ã‚ˆ */
+	top: 0vh; /* vhã¯ç”»é¢ã®ç¸¦ã®é•·ã•ã‚’è¡¨ã™ã‚ˆã€100vhã§ç”»é¢ã„ã£ã±ã„ã ã‚ˆ */
 	left: 0vw;
 	width: 100vw;
 	height: 20vh;
 	margin: 0px;
-	z-index: 100; /* Z²‚¾‚æA‘å‚«‚¢’öè‘O‚É—ˆ‚é‚æ */
-	opacity: 0.9; /* “§–¾“x‚¾‚æA1‚ªÅ‘å’l‚Å0‚ª“§–¾‚¾‚æ */
+	z-index: 100; /* Zè»¸ã ã‚ˆã€å¤§ãã„ç¨‹æ‰‹å‰ã«æ¥ã‚‹ã‚ˆ */
+	opacity: 0.9; /* é€æ˜åº¦ã ã‚ˆã€1ãŒæœ€å¤§å€¤ã§0ãŒé€æ˜ã ã‚ˆ */
 	
 }
 
 #menu {
 
-	position:relative; /* ‚±‚±‚ğq—v‘f‚ÌŠî€‚É‚·‚é‚æ */
-	width:100%; /* e—v‘f‚Ì100%‚Ì‘å‚«‚³ */
+	position:relative; /* ã“ã“ã‚’å­è¦ç´ ã®åŸºæº–ã«ã™ã‚‹ã‚ˆ */
+	width:100%; /* è¦ªè¦ç´ ã®100%ã®å¤§ãã• */
 	height: 100%;
-	display: flex; /* flex‚Á‚Ä‚¢‚¤•À‚Ñ‡‚É‚·‚é‚æ */
-	flex-direction: row; /* flex‚Ìq—v‘f‚ğ‚ğ‰¡•À‚Ñ‚É‚·‚é‚æ */
-	list-style-type: none; /* ƒŠƒXƒg‚ÌÅ‰‚Éo‚Ä‚­‚éƒ}[ƒN‚ğÁ‚·‚æ */
+	display: flex; /* flexã£ã¦ã„ã†ä¸¦ã³é †ã«ã™ã‚‹ã‚ˆ */
+	flex-direction: row; /* flexã®æ™‚å­è¦ç´ ã‚’ã‚’æ¨ªä¸¦ã³ã«ã™ã‚‹ã‚ˆ */
+	list-style-type: none; /* ãƒªã‚¹ãƒˆã®æœ€åˆã«å‡ºã¦ãã‚‹ãƒãƒ¼ã‚¯ã‚’æ¶ˆã™ã‚ˆ */
 	background-image: linear-gradient(skyblue, #00bfff);
 	margin: 0px;
 	padding:0px;	
-	align-items: center; /* display:flex‚Ì’†g‚ğ^‚ñ’†‚ÉŠñ‚¹‚é‚æAc•ûŒü‚¾‚æ */
-	justify-content: center; /* display:flex‚Ì’†g‚ğ^‚ñ’†‚ÉŠñ‚¹‚é‚æA‰¡•ûŒü‚¾‚æ */
+	align-items: center; /* display:flexã®æ™‚ä¸­èº«ã‚’çœŸã‚“ä¸­ã«å¯„ã›ã‚‹ã‚ˆã€ç¸¦æ–¹å‘ã ã‚ˆ */
+	justify-content: center; /* display:flexã®æ™‚ä¸­èº«ã‚’çœŸã‚“ä¸­ã«å¯„ã›ã‚‹ã‚ˆã€æ¨ªæ–¹å‘ã ã‚ˆ */
 
 }
 
 .menubutton {
 
 	position:relative;
-	width:20%;
+	width:15%;
 	height: 80%;
-	background-image: linear-gradient(skyblue, #00bfff); /* ”wŒiF‚ğüŒ`ƒOƒ‰ƒf[ƒVƒ‡ƒ“‚Å“h‚é‚æAƒOƒ‰ƒf[ƒVƒ‡ƒ“‚Í‰æ‘œˆµ‚¢‚È‚ñ‚¾ */
+	background-image: linear-gradient(skyblue, #00bfff); /* èƒŒæ™¯è‰²ã‚’ç·šå½¢ã‚°ãƒ©ãƒ‡ãƒ¼ã‚·ãƒ§ãƒ³ã§å¡—ã‚‹ã‚ˆã€ã‚°ãƒ©ãƒ‡ãƒ¼ã‚·ãƒ§ãƒ³ã¯ç”»åƒæ‰±ã„ãªã‚“ã  */
 	display: flex;
-	align-items: center; /* display:flex‚Ì’†g‚ğ^‚ñ’†‚ÉŠñ‚¹‚é‚æAc•ûŒü‚¾‚æ */
-	justify-content: center; /* display:flex‚Ì’†g‚ğ^‚ñ’†‚ÉŠñ‚¹‚é‚æA‰¡•ûŒü‚¾‚æ */
-	flex-wrap:wrap; /* flex‚ÌƒAƒCƒeƒ€‚ğÜ‚è•Ô‚· */	
-	border-radius: 25px; /* ƒ{[ƒ_[‚ğ‚±‚Ì‚®‚ç‚¢ŠÛ‚­‚·‚é‚Ë */
+	align-items: center; /* display:flexã®æ™‚ä¸­èº«ã‚’çœŸã‚“ä¸­ã«å¯„ã›ã‚‹ã‚ˆã€ç¸¦æ–¹å‘ã ã‚ˆ */
+	justify-content: center; /* display:flexã®æ™‚ä¸­èº«ã‚’çœŸã‚“ä¸­ã«å¯„ã›ã‚‹ã‚ˆã€æ¨ªæ–¹å‘ã ã‚ˆ */
+	flex-wrap:wrap; /* flexã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’æŠ˜ã‚Šè¿”ã™ */	
+	border-radius: 25px; /* ãƒœãƒ¼ãƒ€ãƒ¼ã‚’ã“ã®ãã‚‰ã„ä¸¸ãã™ã‚‹ã­ */
 	margin: 1%;
-	border: solid 3px #5e7fca; /* ƒ{[ƒ_[‚Ì‰º‘¤‚¾‚æ */
-	box-sizing: border-box; /* ƒ{[ƒ_[‚ğ—v‘f‚Ì’†g‚É•`‚­‚æ */
-	color:white; /* •¶š‚ÌF‚¾‚æ */
-	font-weight: bold; /* •¶š‚ğ‘¾‚­‚·‚é‚æ */
-	font-size: 1.6rem; /* html—v‘f‚ÅŒˆ‚ß‚½ƒtƒHƒ“ƒgƒTƒCƒY‚Ì1.6”{‚É‚·‚é‚æ */
+	border: solid 3px #5e7fca; /* ãƒœãƒ¼ãƒ€ãƒ¼ã®ä¸‹å´ã ã‚ˆ */
+	box-sizing: border-box; /* ãƒœãƒ¼ãƒ€ãƒ¼ã‚’è¦ç´ ã®ä¸­èº«ã«æãã‚ˆ */
+	color:white; /* æ–‡å­—ã®è‰²ã ã‚ˆ */
+	font-weight: bold; /* æ–‡å­—ã‚’å¤ªãã™ã‚‹ã‚ˆ */
+	font-size: 1.6rem; /* htmlè¦ç´ ã§æ±ºã‚ãŸãƒ•ã‚©ãƒ³ãƒˆã‚µã‚¤ã‚ºã®1.6å€ã«ã™ã‚‹ã‚ˆ */
 	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);	
 	word-break: break-all;	
 
@@ -186,8 +187,8 @@ a:hover{
 .menuli {
 
 	display: flex;
-	align-items: center; /* display:flex‚Ì’†g‚ğ^‚ñ’†‚ÉŠñ‚¹‚é‚æAc•ûŒü‚¾‚æ */
-	justify-content: center; /* display:flex‚Ì’†g‚ğ^‚ñ’†‚ÉŠñ‚¹‚é‚æA‰¡•ûŒü‚¾‚æ */
+	align-items: center; /* display:flexã®æ™‚ä¸­èº«ã‚’çœŸã‚“ä¸­ã«å¯„ã›ã‚‹ã‚ˆã€ç¸¦æ–¹å‘ã ã‚ˆ */
+	justify-content: center; /* display:flexã®æ™‚ä¸­èº«ã‚’çœŸã‚“ä¸­ã«å¯„ã›ã‚‹ã‚ˆã€æ¨ªæ–¹å‘ã ã‚ˆ */
 	word-break: break-all;
 	width:80%;
 	flex-wrap: wrap;
@@ -198,15 +199,15 @@ a:hover{
 #title {
 
 	position:absolute;
-	font-weight: bold; /* •¶š‚ğ‘¾‚­‚·‚é‚æ */
-	font-size: 1.6rem; /* html—v‘f•”•ª‚ÅŒˆ‚ß‚ç‚ê‚½ƒtƒHƒ“ƒgƒTƒCƒY‚Ì1.6”{‚É‚·‚é‚æ */
+	font-weight: bold; /* æ–‡å­—ã‚’å¤ªãã™ã‚‹ã‚ˆ */
+	font-size: 1.6rem; /* htmlè¦ç´ éƒ¨åˆ†ã§æ±ºã‚ã‚‰ã‚ŒãŸãƒ•ã‚©ãƒ³ãƒˆã‚µã‚¤ã‚ºã®1.6å€ã«ã™ã‚‹ã‚ˆ */
 	width:100%;
 	height:100%;
-	display: flex; /* ’†‰›Šñ‚¹‚É‚·‚éˆ×‚Éflex */
+	display: flex; /* ä¸­å¤®å¯„ã›ã«ã™ã‚‹ç‚ºã«flex */
     align-items: center;
 	justify-content: center;
-	z-index:5; /* ”g–ä‚æ‚èã‚É’u‚«‚½‚©‚Á‚½‚Ì‚Å */
-	color:#000080; /* •¶š‚ÌF‚¾‚æ */
+	z-index:5; /* æ³¢ç´‹ã‚ˆã‚Šä¸Šã«ç½®ããŸã‹ã£ãŸã®ã§ */
+	color:#000080; /* æ–‡å­—ã®è‰²ã ã‚ˆ */
 
 }
 
@@ -218,7 +219,7 @@ a:hover{
 	display: flex;
     align-items: center;
 	justify-content: center;
-	flex-wrap:wrap; /* flex‚ÌƒAƒCƒeƒ€‚ğÜ‚è•Ô‚· */
+	flex-wrap:wrap; /* flexã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’æŠ˜ã‚Šè¿”ã™ */
 
 }
 
@@ -240,14 +241,21 @@ a:hover{
 	position:relative;	
 	display: flex;
 	justify-content: center;
-	flex-direction: row; /* flex‚Ìq—v‘f‚ğ‚ğ‰¡•À‚Ñ‚É‚·‚é‚æ */
+	flex-direction: row; /* flexã®æ™‚å­è¦ç´ ã‚’ã‚’æ¨ªä¸¦ã³ã«ã™ã‚‹ã‚ˆ */
 
 }
 
 #icon {
 
 	position:relative;
-	left:0px;	
+	left:0px;
+	margin-right: 5%;	
+
+}
+
+#icon img{
+
+	width: 300px;
 
 }
 
@@ -255,7 +263,7 @@ a:hover{
 
 	position:relative;
 	width:40%;
-	font-size: 1.4rem; /* html—v‘f‚ÅŒˆ‚ß‚½ƒtƒHƒ“ƒgƒTƒCƒY‚Ì1.6”{‚É‚·‚é‚æAƒtƒHƒ“ƒgƒTƒCƒYŒˆ‚ß‚Ä‚È‚¢‚¯‚Ç */
+	font-size: 1.4rem; /* htmlè¦ç´ ã§æ±ºã‚ãŸãƒ•ã‚©ãƒ³ãƒˆã‚µã‚¤ã‚ºã®1.6å€ã«ã™ã‚‹ã‚ˆã€ãƒ•ã‚©ãƒ³ãƒˆã‚µã‚¤ã‚ºæ±ºã‚ã¦ãªã„ã‘ã© */
 
 }
 
@@ -315,7 +323,7 @@ a:hover{
 .proddesc {
 
 	width:40%;
-	font-size: 1.4rem; /* html—v‘f‚ÅŒˆ‚ß‚½ƒtƒHƒ“ƒgƒTƒCƒY‚Ì1.6”{‚É‚·‚é‚æAƒtƒHƒ“ƒgƒTƒCƒYŒˆ‚ß‚Ä‚È‚¢‚¯‚Ç */
+	font-size: 1.4rem; /* htmlè¦ç´ ã§æ±ºã‚ãŸãƒ•ã‚©ãƒ³ãƒˆã‚µã‚¤ã‚ºã®1.6å€ã«ã™ã‚‹ã‚ˆã€ãƒ•ã‚©ãƒ³ãƒˆã‚µã‚¤ã‚ºæ±ºã‚ã¦ãªã„ã‘ã© */
 
 }
 
